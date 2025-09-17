@@ -11,8 +11,23 @@ config_version=5
 [application]
 
 config/name="brick_breaker"
+run/main_scene="uid://ub11clrpxpr8"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
+
+[autoload]
+
+GameManager="*res://scenes/game_manager.tscn"
+
+[display]
+
+window/size/viewport_width=700
+window/size/viewport_height=400
+window/stretch/mode="canvas_items"
+
+[global_group]
+
+brick=""
 
 [rendering]
 
